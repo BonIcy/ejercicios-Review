@@ -1,0 +1,28 @@
+print ("----------------------MENU----------------------")
+a= "1.  CREAR GRUPO ARTEMIS:"
+b= "1.1 LISTA CAMPERS ARTEMIS"
+c= "1.2 AGREGAR CAMPERS A ARTEMOS"
+d= "1.3 ELIMINAR CAMPERS DE ARTEMIS"
+e= "1.4 ORDENAR ALFABETICAMENTE EN LISTA DE ARTEMIS"
+f= "1.5 BUSCAR CAMPER EN LISTA ARTEMIS"
+g= "2.  CREAR GRUPO SPUTNIK"
+h= "2.1 LISTA CAMPERS DE SPUTNIK"
+i= "2.2 AGREGAR CAMPERS A SPUTNIK"
+j= "2.3 ELIMINAR CAMPERS DE SPUTNIK"
+k= "2.4 ORDENAR ALFABETICAMENTE EN LISTA DE SPUTNIK"
+l= "2.5 BUSCAR CAMPER EN LISTA DE SPUTNIK"
+
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print(f)
+print(g)
+print(h)
+print(i)
+print(j)
+print(k)
+print(l)
+
+OPTION= input("Digite opcion:")
