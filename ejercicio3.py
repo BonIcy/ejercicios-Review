@@ -12,16 +12,16 @@ El total de kilómetros por recorrer durante toda la vuelta serán
 3.277 kilómetros,el ganador de la vuelta a España recibirá 700
 millones de pesos. """ 
 
-valorKm= int(input("Inserta el sueldo basico por cada kilometro (km)recorrido"))
-kmRecorrido= int(input("Inserta el total de kilometros(km) recorridos durante la vuelta a España"))
-camLider = input("Durante la vuelta portó la camisa de lider (Y/N")
+valorKm= int(input("Inserta el sueldo basico por cada kilometro (km)recorrido: "))
+kmRecorrido= int(input("Inserta el total de kilometros(km) recorridos durante la vuelta a España: "))
+camLider = input("Durante la vuelta portó la camisa de lider (Y/N): ")
 
 valorKmLider = 0
 totalKm = 0
 total= 0
 
 if(camLider == "Y"):
-    kmLider = int(input(f"¿De los {kmRecorrido}km cuantos se hicieron con la camisa de lider puesta?"))
+    kmLider = int(input(f"¿De los {kmRecorrido}km cuantos se hicieron con la camisa de lider puesta?: "))
     if(kmLider > 1800):
         kmLider = kmLider - 1800
         recargoEspecial = (valorKm * 0.25) + valorKm

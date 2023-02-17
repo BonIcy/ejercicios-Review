@@ -8,7 +8,7 @@ Informar el nombre de la atleta campeona que se quede
 con la medalla de oro y si rompió récord, reportar el pago que
 será de 500 millones. El récord esta en 15,50 metros. """
 
-def operacion ():
+""" def operacion ():
     print("Por favor Ingresa los siguientes datos: ")
     atleta1 = input("Ingresa el nombre del participante 1 ")
     marca1 = float(input("Ingresa la marca del participante 1 "))
@@ -36,4 +36,25 @@ def operacion ():
             print(" \t Feliciades, acabas de romper el record, por lo que tu pago por esta hazaña será de 500 millones")
     return()
 
-operacion()
+operacion() """
+
+
+num_atletas = 2
+atletas = []
+
+# Pedir nombres y marcas de los atletas
+for i in range(num_atletas):
+    nombreAtleta = input("Nombre del atleta " + str(i+1) + ": ")
+    marcaAtleta = float(input("Marca del salto en metros del atleta " + str(i+1) + ": "))
+    atletas.append((nombreAtleta, marcaAtleta))
+
+# Ordenar lista de atletas en orden descendente de acuerdo con la marca
+atletas.sort(key=lambda x: x[1], reverse=True)
+
+# Imprimir resultado
+print("La atleta campeona es:", atletas[0][0])
+
+if atletas[0][1] > 15.50:
+    print("El atleta ha superado el record, por lo tanto recibirá un pago de 500 millones:D")
+else:
+    print("No has roto el record ja ja ja")
