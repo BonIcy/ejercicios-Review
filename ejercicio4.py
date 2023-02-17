@@ -7,7 +7,7 @@ almacén que mas vendió, cual fue el articulo más vendido de
 ese almacén y cual el más vendido en general. """
 
 # Definimos una constante para el número de almacenes
-NUM_ALMACENES = 500
+NUM_ALMACENES = 1
 
 # Creamos un diccionario para almacenar la información de ventas de cada almacén
 ventas_almacenes = {}

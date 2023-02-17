@@ -22,16 +22,22 @@ total= 0
 
 if(camLider == "Y"):
     kmLider = int(input(f"¿De los {kmRecorrido}km cuantos se hicieron con la camisa de lider puesta?: "))
-    if(kmLider > 1800):
+    if(kmLider >= 1800):
         kmLider = kmLider - 1800
         recargoEspecial = (valorKm * 0.25) + valorKm
         valorKmLider = kmLider * recargoEspecial
         totalKm = (kmRecorrido * valorKm)
         total = totalKm + valorKmLider
-        print(f"Se le asignara un pago de ${totalKm} por recorrer {kmRecorrido} en la vuelta a España")
+        print(f"Se le asignara un pago de ${totalKm} por recorrer {kmRecorrido}km en la vuelta a España")
         print(f"Ademas de obetener ${valorKmLider} por tener mas de 1800km con la camisa de lider puesta")
         print(f"Entonces, el total de pago recibido de tu parte es de ${total}")
+    elif(kmLider < 1800):
+        kmLider = kmLider
+        valorKmLider = kmLider
+        totalKm = (kmRecorrido * valorKm)
+        total = totalKm + valorKmLider
+        print(f"Se le asignara un pago de ${totalKm} por recorrer {kmRecorrido}km en la vuelta a España")
 
 else:
     totalKm = (kmRecorrido * valorKm)
-    print(f"Se le asignara un pago de ${totalKm} por recorrer {kmRecorrido} en la vuelta a España")
+    print(f"Se le asignara un pago de ${totalKm} por recorrer {kmRecorrido}km en la vuelta a España")

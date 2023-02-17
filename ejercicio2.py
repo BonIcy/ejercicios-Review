@@ -52,9 +52,9 @@ for i in range(num_atletas):
 atletas.sort(key=lambda x: x[1], reverse=True)
 
 # Imprimir resultado
-print("La atleta campeona es:", atletas[0][0])
+print("La atleta ganador es:", atletas[0][0])
 
 if atletas[0][1] > 15.50:
-    print("El atleta ha superado el record, por lo tanto recibirá un pago de 500 millones:D")
+    print("El atleta campeon ha ganador el record, por lo tanto recibirá un pago de 500 millones:D")
 else:
     print("No has roto el record ja ja ja")
